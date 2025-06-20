@@ -1,1 +1,69 @@
-/* Custom styles for Hijab Marriage Bureau */ 
+/* Custom styles for Hijab Marriage Bureau */
+:root {
+  --primary-gold: #d4af37;
+  --primary-gold-dark: #bfa12e;
+  --secondary-red: #b22222;
+  --secondary-red-dark: #8b1a1a;
+  --text-dark: #2d2d2d;
+  --bg-light: #fff8e1;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.navbar {
+  background-color: var(--primary-gold) !important;
+}
+
+.navbar-brand, .nav-link, .footer {
+  color: #fff !important;
+}
+
+.nav-link.active, .nav-link:focus, .nav-link:hover {
+  color: var(--secondary-red) !important;
+}
+
+.btn-gold, .btn-primary {
+  background-color: var(--primary-gold) !important;
+  color: #fff !important;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-gold:hover, .btn-primary:hover {
+  background-color: var(--primary-gold-dark) !important;
+  color: #fff !important;
+}
+
+.btn-danger, .btn-red {
+  background-color: var(--secondary-red) !important;
+  color: #fff !important;
+  border: none;
+}
+
+.btn-danger:hover, .btn-red:hover {
+  background-color: var(--secondary-red-dark) !important;
+  color: #fff !important;
+}
+
+.hero, .about-section, .services-section, .register-section, .payment-section, .contact-section {
+  background: linear-gradient(135deg, #fff8e1 60%, #fff 100%);
+}
+
+.highlight-card, .service-card, .payment-card, .pricing-card, .contact-card, .form-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.08);
+  border: 1px solid var(--primary-gold);
+}
+
+.highlight-card h5, .service-card h5, .pricing-card h5 {
+  color: var(--secondary-red);
+}
+
+.footer {
+  background: var(--secondary-red);
+  color: #fff;
+} 
