@@ -78,14 +78,15 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <img src="assets/logo.png" alt="Hijab Logo" class="hero-logo">
+  <!-- Hero Section with Background Image -->
+  <section class="hero position-relative d-flex align-items-center justify-content-center" style="min-height: 60vh; background: url('assets/hero-bg.jpg') center/cover no-repeat;">
+    <div class="container position-relative z-2 text-center text-white" style="background: rgba(178,34,34,0.7); border-radius: 16px; padding: 2rem 1rem; max-width: 600px;">
+      <img src="assets/logo.png" alt="Hijab Logo" class="hero-logo mb-3" style="background: #fff; border-radius: 50%; padding: 8px; width: 100px;">
       <h1 class="display-5 fw-bold">Connecting Hearts with Modesty and Trust</h1>
       <p class="lead mt-3 mb-4">Welcome to Hijab Marriage Bureau, where we value trust, privacy, and Islamic values in every match we make.</p>
-      <a href="register.html" class="btn btn-gold btn-lg">Register Now</a>
+      <a href="register.html" class="btn btn-gold btn-lg shadow">Register Now</a>
     </div>
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(212,175,55,0.15);"></div>
   </section>
 
   <!-- Highlights -->
@@ -114,11 +115,107 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Testimonials Section (to be filled next) -->
+  <section class="testimonials py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold" style="color: var(--red);">Success Stories</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <p class="card-text">“Hijab Marriage Bureau helped me find my soulmate in a halal and respectful way. The process was smooth and confidential.”</p>
+              <div class="d-flex align-items-center mt-3">
+                <img src="assets/testimonial1.png" alt="Testimonial 1" class="rounded-circle me-3" width="48" height="48">
+                <div>
+                  <strong>Fatima S.</strong><br><span class="text-muted" style="font-size: 0.9em;">Lahore, Pakistan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <p class="card-text">“I was impressed by the privacy and professionalism. Highly recommended for anyone seeking a halal match.”</p>
+              <div class="d-flex align-items-center mt-3">
+                <img src="assets/testimonial2.png" alt="Testimonial 2" class="rounded-circle me-3" width="48" height="48">
+                <div>
+                  <strong>Ahmed R.</strong><br><span class="text-muted" style="font-size: 0.9em;">Karachi, Pakistan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <p class="card-text">“The team guided us at every step. We are grateful for their support and Islamic approach.”</p>
+              <div class="d-flex align-items-center mt-3">
+                <img src="assets/testimonial3.png" alt="Testimonial 3" class="rounded-circle me-3" width="48" height="48">
+                <div>
+                  <strong>Sara & Bilal</strong><br><span class="text-muted" style="font-size: 0.9em;">Islamabad, Pakistan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Profiles Section (to be filled next) -->
+  <section class="featured-profiles py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold" style="color: var(--gold);">Featured Profiles</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+          <div class="card shadow-sm h-100 border-0 text-center">
+            <img src="assets/profile1.png" alt="Profile 1" class="rounded-circle mx-auto mt-3" width="64" height="64">
+            <div class="card-body">
+              <h6 class="fw-bold mb-1">Female, 27</h6>
+              <p class="mb-1">Islamabad, Pakistan</p>
+              <span class="badge bg-gold text-dark">Educated</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card shadow-sm h-100 border-0 text-center">
+            <img src="assets/profile2.png" alt="Profile 2" class="rounded-circle mx-auto mt-3" width="64" height="64">
+            <div class="card-body">
+              <h6 class="fw-bold mb-1">Male, 32</h6>
+              <p class="mb-1">Lahore, Pakistan</p>
+              <span class="badge bg-gold text-dark">Professional</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card shadow-sm h-100 border-0 text-center">
+            <img src="assets/profile3.png" alt="Profile 3" class="rounded-circle mx-auto mt-3" width="64" height="64">
+            <div class="card-body">
+              <h6 class="fw-bold mb-1">Female, 29</h6>
+              <p class="mb-1">Karachi, Pakistan</p>
+              <span class="badge bg-gold text-dark">Family Oriented</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card shadow-sm h-100 border-0 text-center">
+            <img src="assets/profile4.png" alt="Profile 4" class="rounded-circle mx-auto mt-3" width="64" height="64">
+            <div class="card-body">
+        <!-- Featured profiles will be added here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Social Media Icons -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2024 Hijab Marriage Bureau. All rights reserved.</p>
-      <a href="https://wa.me/92xxxxxxxxxx" class="btn btn-success mt-2">WhatsApp Us</a>
+      <div class="mb-2">
+        <a href="https://wa.me/92xxxxxxxxxx" class="btn btn-success me-2">WhatsApp Us</a>
+        <a href="#" class="me-2" title="Facebook"><img src="assets/facebook.svg" alt="Facebook" width="28"></a>
+        <a href="#" class="me-2" title="Instagram"><img src="assets/instagram.svg" alt="Instagram" width="28"></a>
+      </div>
     </div>
   </footer>
 

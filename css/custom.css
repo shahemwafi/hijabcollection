@@ -1,69 +1,99 @@
-/* Custom styles for Hijab Marriage Bureau */
+/* Efficient and maintainable color scheme for Hijab Marriage Bureau */
 :root {
-  --primary-gold: #d4af37;
-  --primary-gold-dark: #bfa12e;
-  --secondary-red: #b22222;
-  --secondary-red-dark: #8b1a1a;
-  --text-dark: #2d2d2d;
-  --bg-light: #fff8e1;
+  /* Gold and Red Palette */
+  --gold: #d4af37;
+  --gold-dark: #bfa12e;
+  --gold-light: #f9e7b3;
+  --red: #b22222;
+  --red-dark: #8b1a1a;
+  --red-light: #f8d7da;
+  --white: #fff;
+  --black: #222;
+  --gray: #f5f5f5;
+  --shadow: 0 2px 8px rgba(212, 175, 55, 0.08);
+
+  /* Text Colors */
+  --text-main: var(--black);
+  --text-invert: var(--white);
+  --text-accent: var(--red);
+
+  /* Backgrounds */
+  --bg-main: var(--gold-light);
+  --bg-section: linear-gradient(135deg, var(--gold-light) 60%, var(--white) 100%);
+  --bg-card: var(--white);
 }
 
 body {
-  background-color: var(--bg-light);
-  color: var(--text-dark);
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 .navbar {
-  background-color: var(--primary-gold) !important;
+  background-color: var(--gold) !important;
 }
 
 .navbar-brand, .nav-link, .footer {
-  color: #fff !important;
+  color: var(--text-invert) !important;
 }
 
 .nav-link.active, .nav-link:focus, .nav-link:hover {
-  color: var(--secondary-red) !important;
+  color: var(--red) !important;
 }
 
 .btn-gold, .btn-primary {
-  background-color: var(--primary-gold) !important;
-  color: #fff !important;
+  background-color: var(--gold) !important;
+  color: var(--text-invert) !important;
   font-weight: 600;
   border: none;
+  box-shadow: var(--shadow);
+  transition: background 0.2s;
 }
 
 .btn-gold:hover, .btn-primary:hover {
-  background-color: var(--primary-gold-dark) !important;
-  color: #fff !important;
+  background-color: var(--gold-dark) !important;
+  color: var(--text-invert) !important;
 }
 
 .btn-danger, .btn-red {
-  background-color: var(--secondary-red) !important;
-  color: #fff !important;
+  background-color: var(--red) !important;
+  color: var(--text-invert) !important;
   border: none;
+  box-shadow: var(--shadow);
 }
 
 .btn-danger:hover, .btn-red:hover {
-  background-color: var(--secondary-red-dark) !important;
-  color: #fff !important;
+  background-color: var(--red-dark) !important;
+  color: var(--text-invert) !important;
 }
 
 .hero, .about-section, .services-section, .register-section, .payment-section, .contact-section {
-  background: linear-gradient(135deg, #fff8e1 60%, #fff 100%);
+  background: var(--bg-section);
 }
 
 .highlight-card, .service-card, .payment-card, .pricing-card, .contact-card, .form-container {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.08);
-  border: 1px solid var(--primary-gold);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gold);
 }
 
 .highlight-card h5, .service-card h5, .pricing-card h5 {
-  color: var(--secondary-red);
+  color: var(--red);
 }
 
 .footer {
-  background: var(--secondary-red);
-  color: #fff;
+  background: var(--red);
+  color: var(--text-invert);
+}
+
+/* Accessibility: Ensure links and buttons have clear focus */
+a:focus, .btn:focus {
+  outline: 2px solid var(--red-dark);
+  outline-offset: 2px;
+}
+
+/* Optional: Add a subtle hover effect for cards */
+.highlight-card:hover, .service-card:hover, .pricing-card:hover, .contact-card:hover {
+  box-shadow: 0 4px 16px rgba(178, 34, 34, 0.12);
+  border-color: var(--red);
 } 
