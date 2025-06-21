@@ -1,1 +1,0 @@
-// Main JavaScript for Hijab Marriage Bureau 
